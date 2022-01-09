@@ -1,0 +1,112 @@
+resources:
+  App\Entity\Eleve:
+    shortName: "Eleve"
+    description: "API de notation d'élèves"
+    iri: "/api/eleves"
+
+    properties:
+      nom:
+        attributes:
+          openapi_context:
+            type: string
+            example: DuPont
+      prenom:
+        attributes:
+          openapi_context:
+            type: string
+            example: françois
+
+      dateNaissance:
+        attributes:
+          openapi_context:
+            type: date
+            example: "2001-06-19"
+
+        
+
+
+
+    attributes:
+      normalization_context:
+        groups: ["read_eleve"]
+      denormalization_context:
+        groups: ["write_eleve"]
+
+    collectionOperations:
+      get_moyenne_classe:
+        method: "GET"
+        path: /moyenneclasse
+        controller: App\Controller\Api\EleveController::getMoyenneClasse
+        openapi_context:
+          summary: Récupérer la moyenne générale de la classe
+          description: >
+            # Récupérer la moyenne générale de la classe
+      post:
+        openapi_context:
+          summary: Ajouter un élève
+          description: >
+            # Ajouter un élève
+
+    itemOperations:
+      get:
+        path: /eleve/{id}
+        requirements:
+          id: '\d+'
+        openapi_context:
+          summary: Récupérer la moyenne d'un élève
+          description: >
+            # Récupérer la moyenne d'un élève
+      put:
+        openapi_context:
+          summary: Modifier les informations d'un élève
+          description: >
+            # Modifier les informations d'un élève (nom, prénom, date de naissance)
+      delete:
+        openapi_context:
+          summary: Supprimer un élève
+          description: >
+            # Supprimer un élève
+
+
+
+
+
+
+
+  App\Entity\Note:
+    shortName: "Notes"
+    description: "API pour ajouter une Note à un élève"
+    iri: "/api/notes"
+
+    properties:
+      resultat:
+        attributes:
+          openapi_context:
+            type: float
+            example: 9.99
+      matiere:
+        attributes:
+          openapi_context:
+            type: string
+            example: ontologie
+
+      eleve:
+        attributes:
+          openapi_context:
+            type: string
+            example: /api/eleve/99       
+
+    attributes:
+      normalization_context:
+        groups: ["read_note"]
+      denormalization_context:
+        groups: ["write_note"]
+    collectionOperations:
+      post:
+        path: /addnoteseleve
+        openapi_context:
+          summary: Ajouter une note à un élève
+          description: >
+            # Ajouter une note à un élève
+    itemOperations:
+      get: ~

@@ -1,0 +1,15 @@
+App\Entity\Eleve:
+    attributes:
+        moyenne:
+            groups: ['read_eleve']
+        nom:
+            groups: ['write_eleve'] 
+        prenom:
+            groups: ['write_eleve'] 
+        dateNaissance:
+            groups: ['write_eleve'] 
+            
+ 
+
+                   
+       

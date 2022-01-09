@@ -1,0 +1,12 @@
+App\Entity\Note:
+    attributes:
+        resultat:
+            groups: ['read_note','write_note']
+        matiere:
+            groups: ['read_note','write_note'] 
+        eleve:
+            groups: ['read_note','write_note'] 
+
+        
+                   
+       
