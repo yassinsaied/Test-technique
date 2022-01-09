@@ -12,7 +12,7 @@ Création d'une API de notation d'élèves en Symfony
 * Lancer la commande : $`php bin/console doctrine:schema:update --force`
 * Pour remplire la base de données avec des faux données lancer la commande : $`php bin/console doctrine:fixtures:load` 
 ##  API de notation d'élèves
-Jai implimenter mon API de notation d'élèves et jai mis en place :
+J'ai implémenter mon API de notation d'élèves en utilisant API Platform , et jai mis en place :
 * L'ajout d'un élève .
 * Modification des informations d'un élève .
 * Suppression d'un élève.
