@@ -19,7 +19,7 @@ Jai implimenter mon API de notation d'élèves et jai mis en place :
 * L'ajout d'une note à un élève.
 * Récupération de la moyenne de toutes les notes d'un élève .
 * Récupération de la moyenne générale de la classe.
-Vous trouverez toute la documentation de cette API à l’adresse suivante : url_de_votre_site/api.
+* Vous trouverez toute la documentation de cette API à l’adresse suivante : url_de_votre_site/api.
 
 
 
