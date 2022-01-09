@@ -9,7 +9,7 @@ use Faker\Generator;
 
 /**
  * Class BaseFixtures 
- * class Crée a fin d'être héritier par la class EleveNotesFixtures  
+ * class Crée à fin d'être héritier par la class EleveNotesFixtures  
  */
 
 
