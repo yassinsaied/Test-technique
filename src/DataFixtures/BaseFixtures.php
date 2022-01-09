@@ -22,7 +22,7 @@ abstract class BaseFixtures extends Fixture
     protected $faker;
 
     /**
-     * methode abstarite a fin d'étre utiliser dans les classes enfants pour creée des données
+     * methode abstarite à fin d'étre utiliser dans les classes enfant pour crée des données
      * @param ObjectManager $manager
      */
     abstract protected function loadData(ObjectManager $manager);
@@ -39,7 +39,7 @@ abstract class BaseFixtures extends Fixture
     }
 
     /**
-     * methode pour créer plusieur instance des objet que nous le souhaitons et les Hydrater avec des faux données
+     * methode pour créer plusieurs instance des objets que nous le souhaitons et les Hydrater avec des faux données
      * @param callable $factory
      * @param int $count
      * @param string $className
