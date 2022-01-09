@@ -5,11 +5,21 @@ Création d'une API de notation d'élèves en Symfony
 * cd Test-technique
 * Lancer la commande `composer install`
 ## Configuration des variables d'environnement
-* acceder au fichier  au ficher .env et remplacement vos valeurs d'environnement par exp :
+* Acceder au fichier  au ficher .env et remplacement vos valeurs d'environnement par exp :
 `DATABASE_URL="mysql://root@127.0.0.1:3306/classe_eleve?serverVersion=mariadb-10.4.21"`
 ## Initialisation ET remplire la base de données
 * Lancer la commande : $`php bin/console doctrine:database:create`
 * Lancer la commande : $`php bin/console doctrine:schema:update --force`
 * Pour remplire la base de données avec des faux données lancer la commande : $`php bin/console doctrine:fixtures:load` 
+##  API de notation d'élèves
+Jai implimenter mon API de notation d'élèves et jai mis en place :
+* L'ajout d'un élève .
+* Modification des informations d'un élève .
+* Suppression d'un élève.
+* L'ajout d'une note à un élève.
+* Récupération de la moyenne de toutes les notes d'un élève .
+* Récupération de la moyenne générale de la classe.
+Vous trouverez toute la documentation de cette API à l’adresse suivante : url_de_votre_site/api.
+
 
 
