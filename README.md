@@ -1,5 +1,5 @@
 # Test technique web back
-Création d'une API de notation d'élèves en Symfony
+Création d'une API de notation d'élèves en Symfony 5.4 et API Platform 2.6
 ## Téléchargement des dépendances
 * Vous pouvez ouvrir votre terminal et Télécharger ce repository avec la commande  `git clone https://github.com/yassinsaied/Test-technique.git.`
 * cd Test-technique
