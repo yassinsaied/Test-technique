@@ -5,7 +5,7 @@ Création d'une API de notation d'élèves en Symfony 5.4 et API Platform 2.6
 * cd Test-technique
 * Lancer la commande `composer install`
 ## Configuration des variables d'environnement
-* Acceder au fichier  au ficher .env et remplacer vos valeurs d'environnement par exp :
+* Acceder au ficher .env et remplacer vos valeurs d'environnement par exp :
 `DATABASE_URL="mysql://root@127.0.0.1:3306/classe_eleve?serverVersion=mariadb-10.4.21"`
 ## Création et remplissage de la base de données 
 * Lancer la commande : $`php bin/console doctrine:database:create`
